@@ -5586,7 +5586,7 @@ function confirmarNovoEvento(btn){
 
 const FOLDER_ID   = '18jEgD2OmY-qjYfCAzvidI3WdkGXtzu03';
 const FILE_NAME   = 'dashboard_novas_lojas_data.json';
-const CLIENT_ID   = ''; // preenchido pelo usuário via config
+const CLIENT_ID   = '296512853201-3fqn59n8nt5d8p6sgc8rnrblr5ifibui.apps.googleusercontent.com';
 const DATA_KEY    = 'dashboard_data_v1';
 const TOKEN_KEY   = 'gdrive_token_v1';
 const CLIENT_KEY  = 'gdrive_client_v1';
@@ -5633,7 +5633,7 @@ function startAuth(){
   if(!cid){showNotif('⚠️ Configure o Client ID primeiro.','err');openSyncConfig();return;}
   const params=new URLSearchParams({
     client_id:cid,
-    redirect_uri:window.location.href.split('?')[0],
+    redirect_uri:'https://thifanybarbosagrupoorletti-sketch.github.io/dashboard/',
     response_type:'token',
     scope:'https://www.googleapis.com/auth/drive.file',
     prompt:'consent'
